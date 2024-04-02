@@ -24,8 +24,7 @@ PluginButton.ClickableWhenViewportHidden = true
 
 
 ---////CHECKS IF ALL CONNECTIONS ARE WORKING
-print(loggedInUsrId)
-print(loggedInUsrName)
+print(loggedInUsrName, " HAS RUN THE UiResize PLUGIN")
 ---////CHECKS
 
 
@@ -54,8 +53,7 @@ local function updateFrameSize(input)
     -- Update the frame size based on mouse movements
 RunService.RenderStepped:Connect(function()
    Object.Size = UDim2.new(initialSize.X.Scale, initialSize.X.Offset + mouseDelta.X,  initialSize.Y.Scale, initialSize.Y.Offset + mouseDelta.Y)
-    print(Object.Size)            
-                           
+    print(Object.Size)                 
 end)
   
 end
